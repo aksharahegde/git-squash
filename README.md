@@ -18,6 +18,9 @@ With `curl` on MacOS and Linux, including Windows Subsystem for Linux:
 
 ```
 curl https://raw.githubusercontent.com/sheerun/git-squash/master/git-squash > /usr/local/bin/git-squash && chmod a+x /usr/local/bin/git-squash
+
+## Or if you are a non-root but sudoer user:
+sudo sh -c 'curl https://raw.githubusercontent.com/sheerun/git-squash/master/git-squash > /usr/local/bin/git-squash && chmod a+x /usr/local/bin/git-squash'
 ```
 
 ## Usage
@@ -27,7 +30,8 @@ curl https://raw.githubusercontent.com/sheerun/git-squash/master/git-squash > /u
 # The easiest way to ensure it is to merge it and resolve any conflicts
 git merge master
 # Squash all changes on current branch that happened since master branch
-git squash master
+git squash master## Or if you are a non-root but sudoer user:
+sudo sh -c 'curl https://raw.githubusercontent.com/sheerun/git-squash/master/git-squash > /usr/local/bin/git-squash && chmod a+x /usr/local/bin/git-squash'
 ```
 
 ## License
